@@ -1,4 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Rubik:wght@400;500;700&family=Yeseva+One&display=swap");
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Fira+Sans:wght@200;400;500;700&family=Oswald:wght@400;700&family=Poppins:wght@400;500;600;700&family=Rubik:wght@400;500;700&family=Yeseva+One&display=swap");
+
+/* css variables */
+:root {
+  --body-background: #dfe6ef;
+}
+
+/* utilities */
 * {
   margin: 0;
   padding: 0;
@@ -9,8 +17,70 @@ html {
   overflow-x: hidden;
 }
 body {
-  font-family: "Fira Code", monospace;
+  font-family: "Fira Sans", sans-serif;
   overflow-x: hidden;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+}
+h2 {
+  font-size: 1.6rem;
+}
+p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* ==================== header section ==================== */
+.navbar {
+  padding: 20px 0;
+}
+.navbar-nav .nav-item {
+  margin: 0 20px;
+}
+.navbar-nav .nav-item .nav-link {
+  font-family: "Fira Code", monospace;
+}
+.navbar-nav .contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*  =================caurosel section ================= */
+.carousel {
+  /* max-height: 550px; */
+}
+.carousel-inner .carousel-item img {
+  max-width: 100%;
+  height: 350px;
+  object-fit: cover;
+  animation: image 8s linear infinite;
+  overflow: hidden;
+}
+@keyframes image {
+  100% {
+    transform: scale(1.2);
+  }
+}
+.carousel-caption {
+  margin: 0 auto 3rem;
+}
+.carousel-indicators {
+  bottom: 10%;
+}
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 5px;
 }
 
 /* 
@@ -18,4 +88,5 @@ font-family: 'Fira Code', monospace;
 font-family: 'Poppins', sans-serif;
 font-family: 'Rubik', sans-serif;
 font-family: 'Yeseva One', cursive;
+font-family: 'Fira Sans', sans-serif;
 */

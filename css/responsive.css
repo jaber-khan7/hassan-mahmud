@@ -1,0 +1,86 @@
+/* ================ extra small screen ================ */
+@media screen and (max-width: 575px) {
+}
+/* ================ small screen ================ */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  /* utilities */
+  h1 {
+    font-size: 1.3rem;
+  }
+  .carousel-inner .carousel-item img {
+    height: 400px;
+  }
+}
+/* ================ medium screen ================ */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* utilities */
+  h1 {
+    font-size: 1.5rem;
+  }
+  .carousel-inner .carousel-item img {
+    height: 400px;
+  }
+  .carousel-caption {
+    width: 65%;
+    text-align: left;
+    margin: 0 auto 5rem;
+  }
+}
+/* ================ learge screen ================ */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* utilities */
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  /* header section */
+  /* carousel section */
+  .carousel-inner .carousel-item img {
+    height: 450px;
+  }
+  .carousel-caption {
+    width: 70%;
+    text-align: left;
+    margin: 0 auto 6rem;
+  }
+}
+/* ================ extra learge screen  ================*/
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  /* utilities */
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 18px;
+  }
+
+  /* header section */
+  /* carousel section */
+  .carousel-inner .carousel-item img {
+    height: 550px;
+  }
+  .carousel-caption {
+    width: 75%;
+    text-align: left;
+    margin: 0 auto 8rem;
+  }
+}
+
+/* ================ x-extra learge screen  ================*/
+@media screen and (min-width: 1400px) {
+  /* utilities */
+  h1 {
+    font-size: 3rem;
+  }
+
+  /* header section */
+  /* carousel section */
+  .carousel-inner .carousel-item img {
+    height: 600px;
+  }
+  .carousel-caption {
+    width: 75%;
+    text-align: left;
+    margin: 0 auto 8rem;
+  }
+}
