@@ -1,21 +1,134 @@
 /* ================ extra small screen ================ */
 @media screen and (max-width: 575px) {
+  /*  ================= About me section ================= */
+  .about-me-content {
+    flex-direction: column;
+  }
+  #contact-button {
+    text-align: center;
+  }
+  .my-image {
+    width: 75%;
+    margin: 2rem auto 0;
+  }
+  .links-download-button {
+    flex-direction: column;
+    align-items: center;
+  }
+  .stroke-line {
+    width: 0;
+    height: 0;
+    margin: 0;
+  }
+  .social-links {
+    margin-top: 1rem;
+  }
+  .social-links {
+    margin-top: 2rem0.9;
+  }
+  .social-links a {
+    display: inline-grid;
+    width: 32px;
+    height: 32px;
+  }
+
+  /* ============ features section ============ */
+  .feature-box {
+    margin: 0 1rem;
+  }
+
+  /* ============ portfolio section ============ */
+  .portfolio-box {
+    padding: 1rem;
+  }
+
+  /* ================= pricing section ================= */
+  .choose-a-plan {
+    flex-basis: 100%;
+  }
+  .package-category {
+    background: none;
+    box-shadow: none;
+  }
+
+  .package-price {
+    width: 90%;
+    margin: auto;
+  }
+
+  .price > a {
+    background: var(--box-background);
+    box-shadow: var(--shadow);
+    margin-bottom: 10px;
+  }
 }
 /* ================ small screen ================ */
 @media screen and (min-width: 576px) and (max-width: 767px) {
   /* utilities */
   h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.7rem;
+  }
+  h3 {
     font-size: 1.3rem;
   }
   .carousel-inner .carousel-item img {
     height: 400px;
+  }
+
+  /*  ================= About me section ================= */
+  .about-me-content {
+    flex-direction: column;
+  }
+  .my-image {
+    width: 75%;
+    margin: 2rem auto 0;
+  }
+  .links-download-button {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .social-links {
+    margin-top: 2rem;
+  }
+  .social-links a {
+    display: inline-grid;
+    width: 35px;
+    height: 35px;
+  }
+
+  /* ================= pricing section ================= */
+  .choose-a-plan {
+    flex-basis: 100%;
+  }
+
+  .package-category {
+    background: none;
+    box-shadow: none;
+  }
+
+  .price > a {
+    background: var(--box-background);
+    box-shadow: var(--shadow);
+    margin-bottom: 10px;
   }
 }
 /* ================ medium screen ================ */
 @media screen and (min-width: 768px) and (max-width: 991px) {
   /* utilities */
   h1 {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  h4 {
+    font-size: 0.9rem;
   }
   .carousel-inner .carousel-item img {
     height: 400px;
@@ -25,15 +138,41 @@
     text-align: left;
     margin: 0 auto 5rem;
   }
+
+  /*  ================= About me section ================= */
+  .about-me-content {
+    flex-direction: column;
+  }
+  .my-image {
+    width: 75%;
+    margin: 2rem auto 0;
+  }
+
+  .stroke-line {
+    width: 100px;
+  }
+
+  /* ================= pricing section ================= */
+  .choose-a-plan {
+    flex-basis: 100%;
+  }
 }
 /* ================ learge screen ================ */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   /* utilities */
   h1 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  h4 {
+    font-size: 0.9rem;
   }
 
-  /* header section */
   /* carousel section */
   .carousel-inner .carousel-item img {
     height: 450px;
@@ -43,6 +182,24 @@
     text-align: left;
     margin: 0 auto 6rem;
   }
+  button.btn {
+    padding: 6px 25px;
+    border-radius: 25px;
+  }
+
+  /*  ================= About me section ================= */
+  .about-myself {
+    margin: 3rem 0;
+    /* box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); */
+  }
+  .stroke-line {
+    width: 50px;
+  }
+
+  /* ================= portfolio section ================= */
+  .portfolio-box {
+    padding: 1rem;
+  }
 }
 /* ================ extra learge screen  ================*/
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -50,11 +207,19 @@
   h1 {
     font-size: 3rem;
   }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  h4 {
+    font-size: 0.9rem;
+  }
   p {
     font-size: 18px;
   }
 
-  /* header section */
   /* carousel section */
   .carousel-inner .carousel-item img {
     height: 550px;
@@ -64,6 +229,16 @@
     text-align: left;
     margin: 0 auto 8rem;
   }
+  button.btn {
+    padding: 6px 25px;
+    border-radius: 25px;
+  }
+
+  /*  ================= About me section ================= */
+  .about-myself {
+    margin: 3rem 0;
+    /* box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); */
+  }
 }
 
 /* ================ x-extra learge screen  ================*/
@@ -72,8 +247,16 @@
   h1 {
     font-size: 3rem;
   }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  h4 {
+    font-size: 0.9rem;
+  }
 
-  /* header section */
   /* carousel section */
   .carousel-inner .carousel-item img {
     height: 600px;
@@ -82,5 +265,15 @@
     width: 75%;
     text-align: left;
     margin: 0 auto 8rem;
+  }
+  button.btn {
+    padding: 6px 25px;
+    border-radius: 25px;
+  }
+
+  /*  ================= About me section ================= */
+  .about-myself {
+    margin: 3rem 0;
+    /* box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); */
   }
 }
