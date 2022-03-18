@@ -1,5 +1,14 @@
 /* ================ extra small screen ================ */
 @media screen and (max-width: 575px) {
+  small {
+    font-size: 0.875em;
+  }
+  /* ================== header section ================== */
+
+  .navbar-nav {
+    text-align: center;
+  }
+
   /*  ================= About me section ================= */
   .about-me-content {
     flex-direction: column;
@@ -8,8 +17,9 @@
     text-align: center;
   }
   .my-image {
-    width: 75%;
+    width: 85%;
     margin: 2rem auto 0;
+    padding: 0;
   }
   .links-download-button {
     flex-direction: column;
@@ -21,11 +31,9 @@
     margin: 0;
   }
   .social-links {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
-  .social-links {
-    margin-top: 2rem0.9;
-  }
+
   .social-links a {
     display: inline-grid;
     width: 32px;
@@ -42,13 +50,32 @@
     padding: 1rem;
   }
 
+  /* portfolio toggle content */
+  #portfolio-toggle-container,
+  #toggle-container-project {
+    width: 94%;
+    /* margin: 3rem auto; */
+    padding: 3rem 1rem;
+  }
+  #toggle-content,
+  #project-toggle-content {
+    padding: 1.5rem 0;
+  }
+
   /* ================= pricing section ================= */
+
   .choose-a-plan {
     flex-basis: 100%;
   }
-  .package-category {
+
+  .pricing-section-content {
     background: none;
     box-shadow: none;
+    border-radius: 0;
+  }
+
+  .price > a {
+    padding: 1.2rem 0;
   }
 
   .package-price {
@@ -60,6 +87,37 @@
     background: var(--box-background);
     box-shadow: var(--shadow);
     margin-bottom: 10px;
+  }
+
+  #service-and-price-column {
+    padding: 0 2rem;
+  }
+
+  .price-and-service-quality {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+  }
+
+  .price-of-package {
+    font-size: 1rem;
+    padding: 5px 15px;
+    margin-top: 10px;
+  }
+
+  .col.service-items {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1rem 0 0;
+  }
+
+  .col.service-items .list-items {
+    padding-left: 1.1rem;
+  }
+
+  #delevery-notice > small {
+    display: block;
+    margin-bottom: 3px;
   }
 }
 /* ================ small screen ================ */
@@ -74,6 +132,13 @@
   h3 {
     font-size: 1.3rem;
   }
+
+  /* ================= header section ================= */
+
+  .navbar-nav {
+    text-align: center;
+  }
+
   .carousel-inner .carousel-item img {
     height: 400px;
   }
@@ -99,20 +164,27 @@
     height: 35px;
   }
 
+  /* ============= portfolio section  =============*/
+
+  /* portfolio toggle content */
+  #portfolio-toggle-container {
+    /* margin: 3rem auto; */
+  }
+
+  #toggle-content,
+  #project-toggle-content {
+    padding: 1.5rem 0;
+  }
+
   /* ================= pricing section ================= */
   .choose-a-plan {
     flex-basis: 100%;
   }
 
-  .package-category {
-    background: none;
-    box-shadow: none;
-  }
-
   .price > a {
     background: var(--box-background);
     box-shadow: var(--shadow);
-    margin-bottom: 10px;
+    padding: 1.2rem 0;
   }
 }
 /* ================ medium screen ================ */
@@ -130,6 +202,13 @@
   h4 {
     font-size: 0.9rem;
   }
+
+  /* ================= header section ================= */
+
+  .navbar-nav {
+    text-align: center;
+  }
+
   .carousel-inner .carousel-item img {
     height: 400px;
   }
@@ -149,7 +228,19 @@
   }
 
   .stroke-line {
-    width: 100px;
+    width: 80px;
+  }
+
+  /* ============ portfolio section ============ */
+
+  /* portfolio toggle content */
+  #portfolio-toggle-container {
+    /* margin: 4rem 0; */
+  }
+
+  #toggle-content#toggle-content,
+  #project-toggle-content {
+    padding: 2rem 0;
   }
 
   /* ================= pricing section ================= */
@@ -194,11 +285,22 @@
   }
   .stroke-line {
     width: 50px;
+    margin: 0 1rem;
   }
 
   /* ================= portfolio section ================= */
   .portfolio-box {
     padding: 1rem;
+  }
+
+  /* portfolio toggle content */
+  #portfolio-toggle-container {
+    /* top: 4.5rem; */
+  }
+
+  #toggle-content#toggle-content,
+  #project-toggle-content {
+    padding: 2.5rem 0;
   }
 }
 /* ================ extra learge screen  ================*/
@@ -239,6 +341,18 @@
     margin: 3rem 0;
     /* box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); */
   }
+
+  /* ================ portfolio section ================ */
+
+  /* portfolio toggle content */
+  #portfolio-toggle-container {
+    /* top: 5rem; */
+  }
+
+  #toggle-content#toggle-content,
+  #project-toggle-content {
+    padding: 3rem 0;
+  }
 }
 
 /* ================ x-extra learge screen  ================*/
@@ -275,5 +389,17 @@
   .about-myself {
     margin: 3rem 0;
     /* box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); */
+  }
+
+  /* ================ portfolio section ================ */
+
+  /* portfolio toggle content */
+  #portfolio-toggle-container {
+    /* top: 5rem; */
+  }
+
+  #toggle-content#toggle-content,
+  #project-toggle-content {
+    padding: 3rem 0;
   }
 }
