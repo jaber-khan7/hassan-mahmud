@@ -47,3 +47,64 @@ for (const quickLookButton of quickLookButtons) {
     document.getElementById("portfolio-toggle-container").textContent = "";
   });
 }
+
+// change content of pricing section by clicking button
+// static section
+function packageStatic() {
+  const packagePrice = document
+    .getElementById("static")
+    .addEventListener("click", function () {
+      const priceSectionHeader = (document.getElementById(
+        "basic-price-header"
+      ).innerHTML = `Make Your Single Page`);
+
+      const packagePrice = (document.getElementById(
+        "price-package"
+      ).innerHTML = `30.00`);
+
+      const pricingSectionTextP = (document.getElementById(
+        "pricing-section-text-p"
+      ).innerHTML = `All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary`);
+    });
+}
+packageStatic();
+
+// standard section
+function packageStandard() {
+  const packagePrice = document
+    .getElementById("standard")
+    .addEventListener("click", function () {
+      const priceSectionHeader = (document.getElementById(
+        "basic-price-header"
+      ).innerHTML = `Design Make this Page`);
+
+      const packagePrice = (document.getElementById(
+        "price-package"
+      ).innerHTML = `45.00`);
+
+      const pricingSectionTextP = (document.getElementById(
+        "pricing-section-text-p"
+      ).innerHTML = `Making this the first true generator on the Internet. It uses a dictionary & plugin Development.`);
+    });
+}
+packageStandard();
+
+// premium section
+function packagePremium() {
+  const packagePrice = document
+    .getElementById("premium")
+    .addEventListener("click", function () {
+      const priceSectionHeader = (document.getElementById(
+        "basic-price-header"
+      ).innerHTML = `Customize Your Single Page`);
+
+      const packagePrice = (document.getElementById(
+        "price-package"
+      ).innerHTML = `70.00`);
+
+      const pricingSectionTextP = (document.getElementById(
+        "pricing-section-text-p"
+      ).innerHTML = `I will install your desire theme and made like Theme demo and customize your single page( homepage)`);
+    });
+}
+packagePremium();

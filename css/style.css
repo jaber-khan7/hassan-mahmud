@@ -98,6 +98,7 @@ ul li {
   font-size: 18px;
   font-weight: 300;
   list-style: none;
+  margin: 5px 0;
 }
 
 .row {
@@ -115,11 +116,11 @@ section {
   margin: 0;
 }
 
-#toggle-content {
+/* #toggle-content {
   background: var(--gradient-background-1);
   width: 100%;
   height: auto;
-}
+} */
 
 /* ==================== header section ==================== */
 .navbar {
@@ -411,8 +412,7 @@ button.btn {
 }
 
 /* ============ portfolio toggle container ============ */
-#portfolio-toggle-container,
-#toggle-container-project {
+#portfolio-toggle-container {
   background: var(--gradient-background-2);
   padding: 3rem 2.5rem;
   border: 2px solid var(--border-light);
@@ -461,89 +461,6 @@ button.btn {
 .project-detailes {
   width: 75%;
   margin: auto;
-}
-
-/* ================ testimonial section start ================ */
-
-/* ================== pricing section start ================== */
-.choose-a-plan {
-  flex-basis: 40%;
-}
-/* .choose-a-plan > .section-header {
-  text-align: left;
-} */
-
-.pricing-section-content {
-  background: var(--box-background);
-  box-shadow: var(--shadow);
-  border-radius: 10px;
-}
-
-.price > a {
-  display: block;
-  width: 100%;
-  padding: 1.5rem 0;
-  background: var(--box-background);
-  box-shadow: var(--shadow);
-  color: var(--color-red-orange);
-  font-size: 18px;
-}
-
-.price > a:hover {
-  background: var(--box-background);
-  box-shadow: var(--shadow);
-}
-
-/* ======== service and priceing ======== */
-.price-and-service-quality {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 1.5rem 0;
-}
-
-.price-of-package {
-  font-size: 1.5rem;
-  color: var(--color-red-orange);
-  padding: 0.5rem 2rem;
-  background: var(--box-background);
-  box-shadow: var(--shadow);
-}
-
-.service-items {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.list-items {
-  margin-bottom: 0;
-}
-
-li.list-item > i {
-  color: var(--color-red-orange);
-}
-
-.order-button {
-  display: flex;
-  justify-content: center;
-}
-
-.order-button > .button {
-  padding: 8px 35px;
-  width: 75%;
-}
-
-.list-items-two {
-  padding-left: 4rem;
-}
-
-#delevery-notice {
-  text-align: center;
-}
-
-#delevery-notice > small {
-  margin: 0 10px;
 }
 
 /* ================= my reasume section ================= */
@@ -600,6 +517,126 @@ li.list-item > i {
   background: var(--button-background);
   top: 0;
   left: 0;
+}
+
+/* ================ testimonial section start ================ */
+
+/* ================== pricing section start ================== */
+.choose-a-plan {
+  flex-basis: 40%;
+}
+/* .choose-a-plan > .section-header {
+  text-align: left;
+} */
+
+.pricing-section-content {
+  background: var(--box-background);
+  box-shadow: var(--shadow);
+  border-radius: 10px;
+}
+
+.price {
+  display: block;
+  width: 100%;
+  padding: 1.5rem 0;
+  background: var(--box-background);
+  box-shadow: var(--shadow);
+  color: var(--color-secondary);
+  font-size: 18px;
+  transition: 300ms;
+  border-radius: 5px;
+}
+
+.price:hover {
+  color: var(--hover-color);
+  letter-spacing: 1px;
+  border-radius: 0;
+}
+
+/* ======== service and priceing ======== */
+.service-and-price {
+  position: relative;
+  padding-top: 1.5rem;
+}
+
+/* .basic-price-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+
+/* .standard-price-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+
+/* .premium-price-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+
+.price-and-service-quality {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+.price-of-package {
+  display: flex;
+  font-size: 1.5rem;
+  color: var(--color-red-orange);
+  padding: 0.5rem 2rem;
+  background: var(--box-background);
+  box-shadow: var(--shadow);
+}
+
+.price-of-package > span {
+  margin-left: 3px;
+}
+
+.service-items {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.list-items {
+  margin-bottom: 0;
+}
+
+li.list-item > i {
+  color: var(--color-red-orange);
+}
+
+.order-button {
+  display: flex;
+  justify-content: center;
+}
+
+.order-button > .button {
+  padding: 8px 35px;
+  width: 75%;
+}
+
+.list-items-two {
+  padding-left: 4rem;
+}
+
+#delevery-notice {
+  text-align: center;
+}
+
+#delevery-notice > small {
+  margin: 0 10px;
+}
+
+/* ====================== contact serction ====================== */
+#contact-information {
+  max-width: 700px;
+  margin: 3rem auto;
 }
 
 /* 

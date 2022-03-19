@@ -51,14 +51,12 @@
   }
 
   /* portfolio toggle content */
-  #portfolio-toggle-container,
-  #toggle-container-project {
+  #portfolio-toggle-container {
     width: 94%;
     /* margin: 3rem auto; */
     padding: 3rem 1rem;
   }
-  #toggle-content,
-  #project-toggle-content {
+  #toggle-content {
     padding: 1.5rem 0;
   }
 
@@ -171,14 +169,17 @@
     /* margin: 3rem auto; */
   }
 
-  #toggle-content,
-  #project-toggle-content {
+  #toggle-content {
     padding: 1.5rem 0;
   }
 
   /* ================= pricing section ================= */
   .choose-a-plan {
     flex-basis: 100%;
+  }
+
+  .pricing-section-text-p {
+    margin-bottom: 1.5rem;
   }
 
   .price > a {
@@ -238,8 +239,7 @@
     /* margin: 4rem 0; */
   }
 
-  #toggle-content#toggle-content,
-  #project-toggle-content {
+  #toggle-content {
     padding: 2rem 0;
   }
 
@@ -298,14 +298,18 @@
     /* top: 4.5rem; */
   }
 
-  #toggle-content#toggle-content,
-  #project-toggle-content {
+  #toggle-content {
     padding: 2.5rem 0;
   }
 
   .go-back {
     width: 2.5rem;
     height: 2.5rem;
+  }
+
+  /* ================== pricing section ================== */
+  #pricing-section-text-p {
+    margin-bottom: 1.5rem;
   }
 }
 /* ================ extra learge screen  ================*/
@@ -347,15 +351,17 @@
     /* box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); */
   }
 
-  /* ================ portfolio section ================ */
+  /* ================== pricing section ================== */
+  #pricing-section-text-p {
+    margin-bottom: 1.5rem;
+  }
 
   /* portfolio toggle content */
   #portfolio-toggle-container {
     /* top: 5rem; */
   }
 
-  #toggle-content#toggle-content,
-  #project-toggle-content {
+  #toggle-content {
     padding: 3rem 0;
   }
 
@@ -401,6 +407,11 @@
     /* box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); */
   }
 
+  /* ================== pricing section ================== */
+  #pricing-section-text-p {
+    margin-bottom: 1.5rem;
+  }
+
   /* ================ portfolio section ================ */
 
   /* portfolio toggle content */
@@ -408,8 +419,7 @@
     /* top: 5rem; */
   }
 
-  #toggle-content#toggle-content,
-  #project-toggle-content {
+  #toggle-content {
     padding: 3rem 0;
   }
 
