@@ -302,6 +302,11 @@
   #project-toggle-content {
     padding: 2.5rem 0;
   }
+
+  .go-back {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }
 /* ================ extra learge screen  ================*/
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -353,6 +358,11 @@
   #project-toggle-content {
     padding: 3rem 0;
   }
+
+  .go-back {
+    width: 3rem;
+    height: 3rem;
+  }
 }
 
 /* ================ x-extra learge screen  ================*/
@@ -401,5 +411,10 @@
   #toggle-content#toggle-content,
   #project-toggle-content {
     padding: 3rem 0;
+  }
+
+  .go-back {
+    width: 3rem;
+    height: 3rem;
   }
 }

@@ -112,9 +112,10 @@ section {
   width: 100%;
   height: auto;
   display: none;
+  margin: 0;
 }
 
-#project-toggle-content {
+#toggle-content {
   background: var(--gradient-background-1);
   width: 100%;
   height: auto;
@@ -421,6 +422,31 @@ button.btn {
   z-index: 1033;
 }
 
+.toggle-content-header {
+  position: relative;
+}
+
+.go-back {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5%;
+  width: 2rem;
+  height: 2rem;
+  background: #ffffff54;
+  border-radius: 50%;
+  border: 2px solid var(--border-light);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.go-back:hover {
+  background-color: var(--white-background);
+}
+
 /* ================ project toggle container ================ */
 /* #toggle-container-project {
   background: var(--gradient-background-2);
@@ -431,6 +457,11 @@ button.btn {
   visibility: hidden;
   z-index: 1033;
 } */
+
+.project-detailes {
+  width: 75%;
+  margin: auto;
+}
 
 /* ================ testimonial section start ================ */
 
