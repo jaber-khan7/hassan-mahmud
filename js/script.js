@@ -108,3 +108,57 @@ function packagePremium() {
     });
 }
 packagePremium();
+
+// testimonial section
+// left arrow buttons
+const leftArrow = () => {
+  // set event handler to display testmonial one
+  const rightArrow = document
+    .getElementById("arrow-left")
+    .addEventListener("click", function () {
+      // when click the left arrow button the testimonial one section will be hide
+      const testimonialOne = document.getElementById("client-message-1");
+      testimonialOne.style.display = "block";
+
+      // when click the left arrow button the testimonial tow section will be visible
+      const testmonialTwo = document.getElementById("client-message-2");
+      testmonialTwo.style.display = "none";
+
+      // set background for radio button one
+      const radioOne = (document.getElementById(
+        "button-1"
+      ).style.backgroundColor = "black");
+
+      // set background for radio button two
+      const radioTwo = (document.getElementById(
+        "button-2"
+      ).style.backgroundColor = "#fff");
+    });
+};
+
+// set event handler to display testmonial two
+const rightArrow = () => {
+  const arrowRight = document
+    .getElementById("arrow-right")
+    .addEventListener("click", function () {
+      // when click the left arrow button the testimonial one section will be hide
+      const testimonialOne = document.getElementById("client-message-1");
+      testimonialOne.style.display = "none";
+
+      // when click the left arrow button the testimonial tow section will be visible
+      const testmonialTwo = document.getElementById("client-message-2");
+      testmonialTwo.style.display = "block";
+
+      // set background for radio button one
+      const radioOne = (document.getElementById(
+        "button-1"
+      ).style.backgroundColor = "#fff");
+
+      // set background for radio button two
+      const radioTwo = (document.getElementById(
+        "button-2"
+      ).style.backgroundColor = "black");
+    });
+};
+leftArrow();
+rightArrow();
