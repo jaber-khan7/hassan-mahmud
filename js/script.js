@@ -182,16 +182,13 @@ var swiper = new Swiper(".mySwiper", {
 
 // when click the show more button, display all the projects you have done
 function portfolioSection() {
-  const showMore = document
-    .getElementById("show-more")
-    .addEventListener("click", function () {
-      const portfolioSection = document.getElementById("portfolio-section");
-      portfolioSection.textContent = "";
+  const portfolioSection = document.getElementById("portfolio-section");
+  portfolioSection.textContent = "";
 
-      // project number one
-      const newProjectsColumn1 = document.createElement("div");
-      newProjectsColumn1.classList.add("col");
-      newProjectsColumn1.innerHTML = `
+  // project number one
+  const newProjectsColumn1 = document.createElement("div");
+  newProjectsColumn1.classList.add("col");
+  newProjectsColumn1.innerHTML = `
     <div class="portfolio-box">
       <div class="portfolio-image">
         <img
@@ -230,10 +227,10 @@ function portfolioSection() {
     </div>
     `;
 
-      // project number two
-      const newProjectsColumn2 = document.createElement("div");
-      newProjectsColumn2.classList.add("col");
-      newProjectsColumn2.innerHTML = `
+  // project number two
+  const newProjectsColumn2 = document.createElement("div");
+  newProjectsColumn2.classList.add("col");
+  newProjectsColumn2.innerHTML = `
     <div class="portfolio-box">
       <div class="portfolio-image">
         <img
@@ -272,10 +269,10 @@ function portfolioSection() {
     </div>
     `;
 
-      // project number three
-      const newProjectsColumn3 = document.createElement("div");
-      newProjectsColumn3.classList.add("col");
-      newProjectsColumn3.innerHTML = `
+  // project number three
+  const newProjectsColumn3 = document.createElement("div");
+  newProjectsColumn3.classList.add("col");
+  newProjectsColumn3.innerHTML = `
     <div class="portfolio-box">
       <div class="portfolio-image">
         <img
@@ -314,10 +311,10 @@ function portfolioSection() {
     </div>
     `;
 
-      // project number four
-      const newProjectsColumn4 = document.createElement("div");
-      newProjectsColumn4.classList.add("col");
-      newProjectsColumn4.innerHTML = `
+  // project number four
+  const newProjectsColumn4 = document.createElement("div");
+  newProjectsColumn4.classList.add("col");
+  newProjectsColumn4.innerHTML = `
     <div class="portfolio-box">
       <div class="portfolio-image">
         <img
@@ -356,10 +353,10 @@ function portfolioSection() {
     </div>
     `;
 
-      // project number five
-      const newProjectsColumn5 = document.createElement("div");
-      newProjectsColumn5.classList.add("col");
-      newProjectsColumn5.innerHTML = `
+  // project number five
+  const newProjectsColumn5 = document.createElement("div");
+  newProjectsColumn5.classList.add("col");
+  newProjectsColumn5.innerHTML = `
     <div class="portfolio-box">
       <div class="portfolio-image">
         <img
@@ -398,10 +395,10 @@ function portfolioSection() {
     </div>
     `;
 
-      // project number six
-      const newProjectsColumn6 = document.createElement("div");
-      newProjectsColumn6.classList.add("col");
-      newProjectsColumn6.innerHTML = `
+  // project number six
+  const newProjectsColumn6 = document.createElement("div");
+  newProjectsColumn6.classList.add("col");
+  newProjectsColumn6.innerHTML = `
     <div class="portfolio-box">
       <div class="portfolio-image">
         <img
@@ -440,10 +437,10 @@ function portfolioSection() {
     </div>
     `;
 
-      // project number seven
-      const newProjectsColumn7 = document.createElement("div");
-      newProjectsColumn7.classList.add("col");
-      newProjectsColumn7.innerHTML = `
+  // project number seven
+  const newProjectsColumn7 = document.createElement("div");
+  newProjectsColumn7.classList.add("col");
+  newProjectsColumn7.innerHTML = `
     <div class="portfolio-box">
       <div class="portfolio-image">
         <img
@@ -482,10 +479,10 @@ function portfolioSection() {
     </div>
     `;
 
-      // project number eight
-      const newProjectsColumn8 = document.createElement("div");
-      newProjectsColumn8.classList.add("col");
-      newProjectsColumn8.innerHTML = `
+  // project number eight
+  const newProjectsColumn8 = document.createElement("div");
+  newProjectsColumn8.classList.add("col");
+  newProjectsColumn8.innerHTML = `
     <div class="portfolio-box">
       <div class="portfolio-image">
         <img
@@ -524,10 +521,10 @@ function portfolioSection() {
     </div>
     `;
 
-      // project number nine
-      const newProjectsColumn9 = document.createElement("div");
-      newProjectsColumn9.classList.add("col");
-      newProjectsColumn9.innerHTML = `
+  // project number nine
+  const newProjectsColumn9 = document.createElement("div");
+  newProjectsColumn9.classList.add("col");
+  newProjectsColumn9.innerHTML = `
     <div class="portfolio-box">
       <div class="portfolio-image">
         <img
@@ -566,16 +563,13 @@ function portfolioSection() {
     </div>
     `;
 
-      portfolioSection.appendChild(newProjectsColumn1);
-      portfolioSection.appendChild(newProjectsColumn2);
-      portfolioSection.appendChild(newProjectsColumn3);
-      portfolioSection.appendChild(newProjectsColumn4);
-      portfolioSection.appendChild(newProjectsColumn5);
-      portfolioSection.appendChild(newProjectsColumn6);
-      portfolioSection.appendChild(newProjectsColumn7);
-      portfolioSection.appendChild(newProjectsColumn8);
-      portfolioSection.appendChild(newProjectsColumn9);
-    });
+  portfolioSection.appendChild(newProjectsColumn1);
+  portfolioSection.appendChild(newProjectsColumn2);
+  portfolioSection.appendChild(newProjectsColumn3);
+  portfolioSection.appendChild(newProjectsColumn4);
+  portfolioSection.appendChild(newProjectsColumn5);
+  portfolioSection.appendChild(newProjectsColumn6);
+  portfolioSection.appendChild(newProjectsColumn7);
+  portfolioSection.appendChild(newProjectsColumn8);
+  portfolioSection.appendChild(newProjectsColumn9);
 }
-
-portfolioSection();
