@@ -4,20 +4,20 @@
 /* css variables */
 :root {
   --body-background: #dfe6ef;
-  --button-background: #009e66;
+  --button-background: #ef5354;
   --white-background: #fff;
   --black-background: #242b2e;
   --box-background: linear-gradient(145deg, #e2e8ec, #ffffff);
   --gradient-background-1: linear-gradient(90deg, #f1f2f6, #f5f6fa);
   --gradient-background-2: linear-gradient(90deg, #f1f2f638, #f5f6fa9e);
-  --button-border: #009e66;
+  --button-border: #ef5354;
   --border-secondary: #242b2e;
   --border-light: #fff;
   --border-gray: #d0d0d0;
   --border-dark-gray: #7a7979;
-  --color-red-orange: #009e66;
-  --link-color: #009e66c2;
-  --hover-color: #009e66;
+  --color-red-orange: #ef5354;
+  --link-color: #ff6666;
+  --hover-color: #ef5354;
   --color-white: #fff;
   --color-secondary: #242b2e;
   --color-small-text: #605e5e;
@@ -443,6 +443,14 @@ button.btn {
   transition: 300ms;
 }
 
+div#go-to-back > a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .go-back:hover {
   background-color: var(--white-background);
 }
@@ -521,7 +529,8 @@ button.btn {
 
 /* ================ testimonial section start ================ */
 .client-message-box {
-  padding: 3rem;
+  width: 100%;
+  padding: 1rem 3rem 3rem;
 }
 
 .client {
@@ -592,11 +601,54 @@ button.btn {
 
 .client-message {
   max-width: 100%;
-  margin: 2rem auto 0;
 }
 
 #client-message-2 {
   display: none;
+}
+
+/* testimonial slider section */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button {
+  color: var(--color-small-text);
+}
+
+.swiper-pagination-bullet {
+  width: 1.5rem;
+  height: 3px;
+  background-color: var(--black-background);
+  border-radius: 0;
 }
 
 /* ================== pricing section start ================== */

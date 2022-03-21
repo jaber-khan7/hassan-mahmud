@@ -162,3 +162,420 @@ const rightArrow = () => {
 };
 leftArrow();
 rightArrow();
+
+// testimonial slider section
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  keyboard: {
+    enabled: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+// when click the show more button, display all the projects you have done
+function portfolioSection() {
+  const showMore = document
+    .getElementById("show-more")
+    .addEventListener("click", function () {
+      const portfolioSection = document.getElementById("portfolio-section");
+      portfolioSection.textContent = "";
+
+      // project number one
+      const newProjectsColumn1 = document.createElement("div");
+      newProjectsColumn1.classList.add("col");
+      newProjectsColumn1.innerHTML = `
+    <div class="portfolio-box">
+      <div class="portfolio-image">
+        <img
+          class="img-fluid"
+          src="images/portfolios/h4-product-1.jpg"
+          alt=""
+        />
+        <div class="btn hello quick-look">
+          <a href="#"
+            >quick look
+            <i
+              style="margin-left: 5px"
+              class="fa-solid fa-right-long"
+            ></i>
+          </a>
+        </div>
+      </div>
+      <div class="portfolio-text">
+        <div class="project-name">
+          <h3>
+            <a href="#">product name</a>
+          </h3>
+          <small>home decor</small>
+        </div>
+        <div class="project-price">
+          <div class="delete">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <span>45</span>
+          </div>
+          <div class="stock-price">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <span>30</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    `;
+
+      // project number two
+      const newProjectsColumn2 = document.createElement("div");
+      newProjectsColumn2.classList.add("col");
+      newProjectsColumn2.innerHTML = `
+    <div class="portfolio-box">
+      <div class="portfolio-image">
+        <img
+          class="img-fluid"
+          src="images/portfolios/h4-product-1.jpg"
+          alt=""
+        />
+        <div class="btn hello quick-look">
+          <a href="#"
+            >quick look
+            <i
+              style="margin-left: 5px"
+              class="fa-solid fa-right-long"
+            ></i>
+          </a>
+        </div>
+      </div>
+      <div class="portfolio-text">
+        <div class="project-name">
+          <h3>
+            <a href="#">product name</a>
+          </h3>
+          <small>home decor</small>
+        </div>
+        <div class="project-price">
+          <div class="delete">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <span>45</span>
+          </div>
+          <div class="stock-price">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <span>30</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    `;
+
+      // project number three
+      const newProjectsColumn3 = document.createElement("div");
+      newProjectsColumn3.classList.add("col");
+      newProjectsColumn3.innerHTML = `
+    <div class="portfolio-box">
+      <div class="portfolio-image">
+        <img
+          class="img-fluid"
+          src="images/portfolios/h4-product-1.jpg"
+          alt=""
+        />
+        <div class="btn hello quick-look">
+          <a href="#"
+            >quick look
+            <i
+              style="margin-left: 5px"
+              class="fa-solid fa-right-long"
+            ></i>
+          </a>
+        </div>
+      </div>
+      <div class="portfolio-text">
+        <div class="project-name">
+          <h3>
+            <a href="#">product name</a>
+          </h3>
+          <small>home decor</small>
+        </div>
+        <div class="project-price">
+          <div class="delete">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <span>45</span>
+          </div>
+          <div class="stock-price">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <span>30</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    `;
+
+      // project number four
+      const newProjectsColumn4 = document.createElement("div");
+      newProjectsColumn4.classList.add("col");
+      newProjectsColumn4.innerHTML = `
+    <div class="portfolio-box">
+      <div class="portfolio-image">
+        <img
+          class="img-fluid"
+          src="images/portfolios/h4-product-1.jpg"
+          alt=""
+        />
+        <div class="btn hello quick-look">
+          <a href="#"
+            >quick look
+            <i
+              style="margin-left: 5px"
+              class="fa-solid fa-right-long"
+            ></i>
+          </a>
+        </div>
+      </div>
+      <div class="portfolio-text">
+        <div class="project-name">
+          <h3>
+            <a href="#">product name</a>
+          </h3>
+          <small>home decor</small>
+        </div>
+        <div class="project-price">
+          <div class="delete">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <span>45</span>
+          </div>
+          <div class="stock-price">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <span>30</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    `;
+
+      // project number five
+      const newProjectsColumn5 = document.createElement("div");
+      newProjectsColumn5.classList.add("col");
+      newProjectsColumn5.innerHTML = `
+    <div class="portfolio-box">
+      <div class="portfolio-image">
+        <img
+          class="img-fluid"
+          src="images/portfolios/h4-product-1.jpg"
+          alt=""
+        />
+        <div class="btn hello quick-look">
+          <a href="#"
+            >quick look
+            <i
+              style="margin-left: 5px"
+              class="fa-solid fa-right-long"
+            ></i>
+          </a>
+        </div>
+      </div>
+      <div class="portfolio-text">
+        <div class="project-name">
+          <h3>
+            <a href="#">product name</a>
+          </h3>
+          <small>home decor</small>
+        </div>
+        <div class="project-price">
+          <div class="delete">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <span>45</span>
+          </div>
+          <div class="stock-price">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <span>30</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    `;
+
+      // project number six
+      const newProjectsColumn6 = document.createElement("div");
+      newProjectsColumn6.classList.add("col");
+      newProjectsColumn6.innerHTML = `
+    <div class="portfolio-box">
+      <div class="portfolio-image">
+        <img
+          class="img-fluid"
+          src="images/portfolios/h4-product-1.jpg"
+          alt=""
+        />
+        <div class="btn hello quick-look">
+          <a href="#"
+            >quick look
+            <i
+              style="margin-left: 5px"
+              class="fa-solid fa-right-long"
+            ></i>
+          </a>
+        </div>
+      </div>
+      <div class="portfolio-text">
+        <div class="project-name">
+          <h3>
+            <a href="#">product name</a>
+          </h3>
+          <small>home decor</small>
+        </div>
+        <div class="project-price">
+          <div class="delete">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <span>45</span>
+          </div>
+          <div class="stock-price">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <span>30</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    `;
+
+      // project number seven
+      const newProjectsColumn7 = document.createElement("div");
+      newProjectsColumn7.classList.add("col");
+      newProjectsColumn7.innerHTML = `
+    <div class="portfolio-box">
+      <div class="portfolio-image">
+        <img
+          class="img-fluid"
+          src="images/portfolios/h4-product-1.jpg"
+          alt=""
+        />
+        <div class="btn hello quick-look">
+          <a href="#"
+            >quick look
+            <i
+              style="margin-left: 5px"
+              class="fa-solid fa-right-long"
+            ></i>
+          </a>
+        </div>
+      </div>
+      <div class="portfolio-text">
+        <div class="project-name">
+          <h3>
+            <a href="#">product name</a>
+          </h3>
+          <small>home decor</small>
+        </div>
+        <div class="project-price">
+          <div class="delete">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <span>45</span>
+          </div>
+          <div class="stock-price">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <span>30</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    `;
+
+      // project number eight
+      const newProjectsColumn8 = document.createElement("div");
+      newProjectsColumn8.classList.add("col");
+      newProjectsColumn8.innerHTML = `
+    <div class="portfolio-box">
+      <div class="portfolio-image">
+        <img
+          class="img-fluid"
+          src="images/portfolios/h4-product-1.jpg"
+          alt=""
+        />
+        <div class="btn hello quick-look">
+          <a href="#"
+            >quick look
+            <i
+              style="margin-left: 5px"
+              class="fa-solid fa-right-long"
+            ></i>
+          </a>
+        </div>
+      </div>
+      <div class="portfolio-text">
+        <div class="project-name">
+          <h3>
+            <a href="#">product name</a>
+          </h3>
+          <small>home decor</small>
+        </div>
+        <div class="project-price">
+          <div class="delete">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <span>45</span>
+          </div>
+          <div class="stock-price">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <span>30</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    `;
+
+      // project number nine
+      const newProjectsColumn9 = document.createElement("div");
+      newProjectsColumn9.classList.add("col");
+      newProjectsColumn9.innerHTML = `
+    <div class="portfolio-box">
+      <div class="portfolio-image">
+        <img
+          class="img-fluid"
+          src="images/portfolios/h4-product-1.jpg"
+          alt=""
+        />
+        <div class="btn hello quick-look">
+          <a href="#"
+            >quick look
+            <i
+              style="margin-left: 5px"
+              class="fa-solid fa-right-long"
+            ></i>
+          </a>
+        </div>
+      </div>
+      <div class="portfolio-text">
+        <div class="project-name">
+          <h3>
+            <a href="#">product name</a>
+          </h3>
+          <small>home decor</small>
+        </div>
+        <div class="project-price">
+          <div class="delete">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <span>45</span>
+          </div>
+          <div class="stock-price">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <span>30</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    `;
+
+      portfolioSection.appendChild(newProjectsColumn1);
+      portfolioSection.appendChild(newProjectsColumn2);
+      portfolioSection.appendChild(newProjectsColumn3);
+      portfolioSection.appendChild(newProjectsColumn4);
+      portfolioSection.appendChild(newProjectsColumn5);
+      portfolioSection.appendChild(newProjectsColumn6);
+      portfolioSection.appendChild(newProjectsColumn7);
+      portfolioSection.appendChild(newProjectsColumn8);
+      portfolioSection.appendChild(newProjectsColumn9);
+    });
+}
+
+portfolioSection();

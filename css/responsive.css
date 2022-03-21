@@ -61,11 +61,11 @@
   }
 
   /* ================ testimonial section ================ */
-  .arrow-buttons {
+  /* .arrow-buttons {
     font-size: 1rem;
     top: 1rem;
     right: 1rem;
-  }
+  } */
 
   /* ================= pricing section ================= */
 
@@ -127,12 +127,16 @@
 
   /* ============= testimonial section ============= */
   .client-message-box {
-    padding: 2rem;
+    padding: 2rem 1rem;
   }
 
-  .arrow-buttons {
-    width: 55px;
+  .swiper-button {
+    display: none;
   }
+
+  /* .arrow-buttons {
+    width: 55px;
+  } */
 }
 /* ================ small screen ================ */
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -205,11 +209,18 @@
   }
 
   /* ================ testimonial section ================ */
-  .arrow-buttons {
+  .client-message-box {
+    padding: 3rem 1rem;
+  }
+
+  .swiper-button {
+    display: none;
+  }
+  /* .arrow-buttons {
     font-size: 1.3rem;
     top: 1.3rem;
     right: 1.3rem;
-  }
+  } */
 }
 /* ================ medium screen ================ */
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -276,6 +287,10 @@
     font-size: 1.5rem;
     top: 1.5rem;
     right: 2rem;
+  }
+
+  .swiper-button {
+    /* display: none; */
   }
 }
 /* ================ learge screen ================ */
@@ -391,6 +406,12 @@
     /* box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); */
   }
 
+  /* =============== testimonial section =============== */
+  .client-message-box {
+    width: 90%;
+    margin: auto;
+  }
+
   /* ================== pricing section ================== */
   #pricing-section-text-p {
     margin-bottom: 1.5rem;
@@ -411,6 +432,11 @@
   }
 
   /* ================= testimonial section ================= */
+  .client-message-box {
+    width: 90%;
+    margin: auto;
+  }
+
   .client-message {
     max-width: 75%;
   }
@@ -474,6 +500,11 @@
   }
 
   /* ================= testimonial section ================= */
+  .client-message-box {
+    width: 90%;
+    margin: auto;
+  }
+
   .client-message {
     max-width: 75%;
   }

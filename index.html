@@ -9,19 +9,25 @@
       src="https://kit.fontawesome.com/3fd646aeed.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
     <!-- bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css" />
+
     <!-- responsive css -->
     <link rel="stylesheet" href="css/responsive.css" />
+
     <!-- fav icon -->
-    <link
-      rel="shortcut icon"
-      href="images/shapes/shape-7.png"
-      type="image/x-icon"
+    <link rel="shortcut icon" href="images/shapes/shape-7.png" type="image/x-icon"
     />
+
     <title>hassan-mahmud-hridoy</title>
+
   </head>
   <body> 
       <!-- ================ header section start ================ -->
@@ -329,7 +335,7 @@
                     src="images/portfolios/h4-product-1.jpg"
                     alt=""
                   />
-                  <div class="btn hello show-more">
+                  <div id="show-more" class="btn hello show-more">
                     <a href="#">show more
                       <i style="margin-left: 5px;" class="fa-solid fa-right-long"></i>
                     </a>
@@ -711,7 +717,7 @@
           </div>
 
           <!-- what clients say -->
-          <div class="what-client-says mt-5" style="position: relative;">
+          <div class="what-client-says mt-5 mb-5 d-none" style="position: relative;">
             
             <!-- client message-1 -->
             <div id="client-message-1" class="client-message">
@@ -780,6 +786,95 @@
               </div>
             </div>
           </div>
+
+          <!-- what clients says withe slider -->
+          <div id="swiper-slide" class="swiper mySwiper mt-5">
+            <div class="swiper-wrapper">
+
+              <!-- swiper slider one -->
+              <div class="swiper-slide">
+                <!-- client message-1 -->
+                <div id="client-message-1" class="client-message">
+                  <div class="client-message-box">
+                    <div class="client">
+                      <div class="client-image">
+                        <img class="img-fluid" src="images/clients-imges/client-1.jpg" alt="">
+                      </div>
+                      <div class="client-name">
+                        <h3 class="mb-0">Jaber Khan</h3>
+                      <small>Web Developer</small>
+                      </div>
+                    </div>
+
+                    <div class="clients-comment text-center">
+                      <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, ab adipisci officia tempora maiores incidunt maxime repellendus placeat. Ratione temporibus illum culpa harum repudiandae alias eius nesciunt consequatur necessitatibus quasi.
+                      </p>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- swiper slider two -->
+              <div class="swiper-slide">
+                <!-- client message-1 -->
+                <div id="client-message-1" class="client-message">
+                  <div class="client-message-box">
+                    <div class="client">
+                      <div class="client-image">
+                        <img class="img-fluid" src="images/clients-imges/client-2.jpg" alt="">
+                      </div>
+                      <div class="client-name">
+                        <h3 class="mb-0">Julia Sakura</h3>
+                      <small>Envato Customer</small>
+                      </div>
+                    </div>
+
+                    <div class="clients-comment text-center">
+                      <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, ab adipisci officia tempora maiores incidunt maxime repellendus placeat. Ratione temporibus illum culpa harum repudiandae alias eius nesciunt consequatur necessitatibus quasi.
+                      </p>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- swiper slider three -->
+              <div class="swiper-slide">
+                <!-- client message-1 -->
+                <div id="client-message-1" class="client-message">
+                  <div class="client-message-box">
+                    <div class="client">
+                      <div class="client-image">
+                        <img class="img-fluid" src="images/clients-imges/client-3.jpg" alt="">
+                      </div>
+                      <div class="client-name">
+                        <h3 class="mb-0">Maria Wilson</h3>
+                      <small>Businessman</small>
+                      </div>
+                    </div>
+
+                    <div class="clients-comment text-center">
+                      <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, ab adipisci officia tempora maiores incidunt maxime repellendus placeat. Ratione temporibus illum culpa harum repudiandae alias eius nesciunt consequatur necessitatibus quasi.
+                      </p>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="swiper-button-next swiper-button"></div>
+            <div class="swiper-button-prev swiper-button"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+
         </div>
       </section>
 
@@ -1326,7 +1421,7 @@
         </div>
 
         <!-- portfolio boxes -->
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-3 g-4">
+        <div class="d-none row row-cols-1 row-cols-sm-2 row-cols-xl-3 g-4">
           <div class="col">
             <div class="portfolio-box">
               <div class="portfolio-image">
@@ -1679,14 +1774,21 @@
           </div>
         </div>
 
+        <div id="portfolio-section" class="row row-cols-1 row-cols-sm-2 row-cols-xl-3 g-4"></div>
+
+
       </div>
     </section>
 
 
 
 
+     <!-- Swiper JS -->
+     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <!-- javascript file -->
     <script src="js/bootstrap.bundle.min.js"></script>
+
     <script src="js/script.js"></script>
   </body>
 </html>
