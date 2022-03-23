@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- responsive css -->
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- fav icon -->
+    <link
+      rel="shortcut icon"
+      href="images/shapes/shape-7.png"
+      type="image/x-icon"
+    />
+
+    <title>my portfolio</title>
+  </head>
+  <body>
+    <!-- ============== header section start ============== -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="border: none"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Project</a>
+            </li>
+            <li class="nav-item">
+              <div class="btn-outline">
+                <a class="nav-link" href="#contact">Contact</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================= my portfolio ================= -->
+
+    <section id="toggle-content">
+      <div id="portfolio-toggle-container" class="container">
+        <div class="section-header toggle-content-header">
+          <h2>Logo Design</h2>
+        </div>
+
+        <!-- portfolio boxes -->
+        <div
+          id="portfolio-section"
+          class="row row-cols-1 row-cols-sm-2 row-cols-xl-3 g-4"
+        ></div>
+      </div>
+    </section>
+
+    <!-- javascript file -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      // project names
+      let titleArray = [
+        "logo",
+        "logo",
+        "logo",
+        "logo",
+        "logo",
+        "logo",
+        "logo",
+        "logo",
+        "logo",
+      ];
+      let imageArray = [
+        "logo-1.jpg",
+        "logo-2.jpg",
+        "logo-3.jpg",
+        "logo-4.jpg",
+        "logo-5.jpg",
+        "logo-6.jpg",
+        "logo-7.gif",
+        "logo-8.gif",
+        "logo-9.gif",
+      ];
+
+      // projects detailes
+      let descriptionArray = [
+        "logo design",
+        "logo design",
+        "logo editing",
+        "logo design",
+      ];
+
+      // stock price
+      let stockPrice = [30, 50, 45, 15];
+
+      const parentDiv = document.getElementById("portfolio-section");
+      for (let i = 0; i < titleArray.length; i++) {
+        let logoImage = document.getElementById(`col${i}`);
+        let fetch = document.getElementById("portfolio-section").innerHTML;
+        parentDiv.innerHTML =
+          fetch +
+          `
+          <div id='col${i}' class="col">
+          <div id="portfolio-box" class="portfolio-box">
+            <div class="portfolio-image">
+              <img id = 'logo-img'
+                src='image/logo/${imageArray[i]}'
+                alt=""
+              />
+              <div class="btn hello quick-look">
+                <a href="#">quick look
+                  <i style="margin-left: 5px;" class="fa-solid fa-right-long"></i>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio-text">
+              <div class="project-name">
+                <h3>
+                  ${titleArray[i]}
+                </h3>
+                <small>${descriptionArray[i]}</small>
+              </div>
+              <div class="project-price">
+                <div class="stock-price">
+                  <span>tk. ${stockPrice[i]}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        `;
+      }
+    </script>
+
+    <!-- <script src="js/script.js"></script> -->
+  </body>
+</html>

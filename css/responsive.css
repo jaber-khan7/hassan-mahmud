@@ -161,6 +161,10 @@
     height: 400px;
   }
 
+  .carousel-caption > h1 {
+    font-size: 2.2rem;
+  }
+
   /*  ================= About me section ================= */
   .about-me-content {
     flex-direction: column;
@@ -318,18 +322,28 @@
     text-align: left;
     margin: 0 auto 6rem;
   }
+
+  .carousel-caption > h1 {
+    font-size: 2.5rem;
+  }
+
   button.btn {
     padding: 6px 25px;
     border-radius: 25px;
   }
 
   /*  ================= About me section ================= */
+  .my-image {
+    flex-basis: 45%;
+  }
+
   .about-myself {
+    flex-basis: 55%;
     margin: 3rem 0;
     /* box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); */
   }
   .stroke-line {
-    width: 50px;
+    width: 0;
     margin: 0 1rem;
   }
 
@@ -395,6 +409,11 @@
     text-align: left;
     margin: 0 auto 8rem;
   }
+
+  .carousel-caption > h1 {
+    font-size: 2.7rem;
+  }
+
   button.btn {
     padding: 6px 25px;
     border-radius: 25px;
@@ -467,12 +486,23 @@
     text-align: left;
     margin: 0 auto 8rem;
   }
+
+  .carousel-caption > h1 {
+    font-size: 2.7rem;
+  }
+
   button.btn {
     padding: 6px 25px;
     border-radius: 25px;
   }
 
   /*  ================= About me section ================= */
+  .about-me-content {
+    justify-content: center;
+  }
+  .my-image {
+    flex-basis: 35%;
+  }
   .about-myself {
     margin: 3rem 0;
     /* box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); */

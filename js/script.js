@@ -11,18 +11,18 @@
 
 // show more porjects
 
-const showMoreButtons = document.getElementsByClassName("show-more");
-for (const showmoreButton of showMoreButtons) {
-  showmoreButton.addEventListener("click", function () {
-    const toggleContent = document.getElementById("portfolio-toggle-container");
-    toggleContent.style.visibility = "visible";
-    document.getElementById("toggle-content").style.display = "block";
-    const mainSection = document.getElementById("main");
-    mainSection.style.display = "none";
-    const carouselSection = document.getElementById("carousel");
-    carouselSection.style.display = "none";
-  });
-}
+// const showMoreButtons = document.getElementsByClassName("show-more");
+// for (const showmoreButton of showMoreButtons) {
+//   showmoreButton.addEventListener("click", function () {
+//     const toggleContent = document.getElementById("portfolio-toggle-container");
+//     toggleContent.style.visibility = "visible";
+//     document.getElementById("toggle-content").style.display = "block";
+//     const mainSection = document.getElementById("main");
+//     mainSection.style.display = "none";
+//     const carouselSection = document.getElementById("carousel");
+//     carouselSection.style.display = "none";
+//   });
+// }
 
 // hide content
 
@@ -36,6 +36,8 @@ const hideContent = document
     mainSection.style.display = "block";
     const carouselSection = document.getElementById("carousel");
     carouselSection.style.display = "block";
+    const portfolioSection = document.getElementById("portfolio-section");
+    portfolioSection.textContent = "";
   });
 
 const quickLookButtons = document.getElementsByClassName("quick-look");
@@ -188,6 +190,7 @@ function portfolioSection() {
   // project number one
   const newProjectsColumn1 = document.createElement("div");
   newProjectsColumn1.classList.add("col");
+  newProjectsColumn1.textContent = "";
   newProjectsColumn1.innerHTML = `
     <div class="portfolio-box">
       <div class="portfolio-image">
@@ -563,13 +566,13 @@ function portfolioSection() {
     </div>
     `;
 
-  portfolioSection.appendChild(newProjectsColumn1);
-  portfolioSection.appendChild(newProjectsColumn2);
-  portfolioSection.appendChild(newProjectsColumn3);
-  portfolioSection.appendChild(newProjectsColumn4);
-  portfolioSection.appendChild(newProjectsColumn5);
-  portfolioSection.appendChild(newProjectsColumn6);
-  portfolioSection.appendChild(newProjectsColumn7);
-  portfolioSection.appendChild(newProjectsColumn8);
-  portfolioSection.appendChild(newProjectsColumn9);
+  // portfolioSection.appendChild(newProjectsColumn1);
+  // portfolioSection.appendChild(newProjectsColumn2);
+  // portfolioSection.appendChild(newProjectsColumn3);
+  // portfolioSection.appendChild(newProjectsColumn4);
+  // portfolioSection.appendChild(newProjectsColumn5);
+  // portfolioSection.appendChild(newProjectsColumn6);
+  // portfolioSection.appendChild(newProjectsColumn7);
+  // portfolioSection.appendChild(newProjectsColumn8);
+  // portfolioSection.appendChild(newProjectsColumn9);
 }
